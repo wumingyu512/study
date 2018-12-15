@@ -5,3 +5,13 @@ function myname(){
     else if (typeof name !== string)
     {alert("用户名不可用");return false;}
 }
+function mypwd(){
+    var pwd=document.forms["form"]["pwd"].value;
+    var rpwd=document.forms["form"]["rpwd"].value;
+    if (pwd != rpwd)
+    {
+        alert("密码不一致，请重新输入");
+        return false;
+    }
+}
+function phone(){}
