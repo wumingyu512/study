@@ -1,8 +1,9 @@
 function myname(){
     var name=document.forms["form"]["name"].value;
+    var tname=typeof name;
     if (name==null || name=="")
     {alert("用户名为空");return false;}
-    else if (typeof name !== string)
+    else if (tname != 'string')
     {alert("用户名不可用");return false;}
 }
 function mypwd(){
@@ -15,3 +16,7 @@ function mypwd(){
     }
 }
 function phone(){}
+$(document).ready(function(){$("form").submit(function(){
+    alert("ok");
+});
+});
